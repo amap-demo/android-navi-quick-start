@@ -72,7 +72,7 @@ public class RouteNaviActivity extends Activity implements AMapNaviListener, AMa
     }
 
     /**
-     * 驾车路径规划计算
+     * 驾车路径规划计算,计算单条路径
      */
     private void calculateDriveRoute(NaviLatLng start, NaviLatLng end) {
         int strategyFlag = 0;

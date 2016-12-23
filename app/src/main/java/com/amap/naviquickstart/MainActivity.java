@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity implements AMapLocationListe
         snippet.setText("距当前位置" + showDistance);
         ImageButton button = (ImageButton) view
                 .findViewById(R.id.start_amap_app);
-        // 调起高德地图app
+        // 调起导航
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
