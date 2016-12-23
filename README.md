@@ -21,7 +21,9 @@
 - 搜索周边餐饮服务
 
  ![Screenshot](https://github.com/amap-demo/android-navi-quick-start/blob/master/resource/screenshot_search.png?raw=true)
+
 - 导航到选定目的地
+
  ![Screenshot](https://github.com/amap-demo/android-navi-quick-start/blob/master/resource/screenshot_navi.png?raw=true)
  
 ## 核心类/接口 ##
