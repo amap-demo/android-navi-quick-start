@@ -119,6 +119,7 @@ public class RouteNaviActivity extends Activity implements AMapNaviListener, AMa
         mAMapNavi.stopNavi();
 //		mAMapNavi.destroy();
         mTtsManager.destroy();
+        mAMapNavi.removeAMapNaviListener(mTtsManager);
     }
 
     @Override
