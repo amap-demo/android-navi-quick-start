@@ -160,15 +160,6 @@ public class RouteNaviActivity extends Activity implements AMapNaviListener, AMa
     }
 
     @Override
-    public void onCalculateRouteSuccess() {
-        if (mIsGps) {
-            mAMapNavi.startNavi(AMapNavi.GPSNaviMode);
-        } else {
-            mAMapNavi.startNavi(AMapNavi.EmulatorNaviMode);
-        }
-    }
-
-    @Override
     public void onCalculateRouteFailure(int errorInfo) {
     }
 
@@ -267,8 +258,12 @@ public class RouteNaviActivity extends Activity implements AMapNaviListener, AMa
     }
 
     @Override
-    public void onCalculateMultipleRoutesSuccess(int[] ints) {
-
+    public void onCalculateRouteSuccess(int[] ints) {
+        if (mIsGps) {
+            mAMapNavi.startNavi(AMapNavi.GPSNaviMode);
+        } else {
+            mAMapNavi.startNavi(AMapNavi.EmulatorNaviMode);
+        }
     }
 
     @Override
