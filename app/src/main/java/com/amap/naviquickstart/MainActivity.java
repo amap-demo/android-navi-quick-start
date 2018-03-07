@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
@@ -108,7 +109,9 @@ public class MainActivity extends AppCompatActivity implements AMapLocationListe
 
     @Override
     public void onLocationChanged(AMapLocation aMapLocation) {
+
         if (aMapLocation == null || aMapLocation.getErrorCode() != AMapLocation.LOCATION_SUCCESS) {
+            Toast.makeText(this,aMapLocation.getErrorInfo()+"  "+aMapLocation.getErrorCode(),Toast.LENGTH_LONG).show();
             return;
         }
         mCurrentLocation = aMapLocation;

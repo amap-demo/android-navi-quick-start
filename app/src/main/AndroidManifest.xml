@@ -28,7 +28,7 @@
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="您的key" />
-
+        <service android:name="com.amap.api.location.APSService"></service>
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
