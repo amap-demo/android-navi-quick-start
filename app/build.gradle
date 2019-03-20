@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.amap.naviquickstart"
         minSdkVersion 14
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         ndk {
